@@ -25,18 +25,10 @@
 }
 
 body {
-  /*
-  background-image: url(./assets/bg-mobile.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-  */
-
   /*background: color image repeat position/size */
-
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 
-  /*o primeiro comentário é a forma completa de escrever, a linha 11 é o shorthand (atalho) */
 }
 
 body * {
@@ -174,3 +166,13 @@ footer {
   
 }
 
+/* media queries */
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
